@@ -5,5 +5,4 @@ import cmsController from './cms.controller';
 export const cmsRouter = express.Router();
 
 
-cmsRouter.get('/test',cmsController.test);
-
+cmsRouter.get('/', cmsController.getdata);

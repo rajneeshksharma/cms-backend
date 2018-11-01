@@ -2,13 +2,14 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const cmsSchema = new Schema({
-    title: {
-        type: String,
-        required: [true, 'SOng must have title'],
+    home: {
+        type: String
     },
-    url: {
-        type: String,
-        required: [true, 'Song must have url'],
+    contactus: {
+        type: String
+    },
+    aboutus: {
+        type: String
     },
 });
 
