@@ -1,0 +1,1 @@
+export { cmsRouter } from './cms.router';

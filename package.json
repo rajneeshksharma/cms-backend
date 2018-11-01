@@ -1,0 +1,35 @@
+{
+  "name": "cms-backend",
+  "version": "1.0.0",
+  "description": "A CMS application ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec babel-node --presets env",
+    "build": "babel src -d dist --source-maps inline --copy-files",
+    "serve": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajneeshksharma/cms-backend.git"
+  },
+  "author": "Rajneesh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.3"
+  },
+  "bugs": {
+    "url": "https://github.com/rajneeshksharma/cms-backend/issues"
+  },
+  "homepage": "https://github.com/rajneeshksharma/cms-backend#readme"
+}
