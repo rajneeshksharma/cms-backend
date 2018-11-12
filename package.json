@@ -2,7 +2,7 @@
   "name": "cms-backend",
   "version": "1.0.0",
   "description": "A CMS application ",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js --exec babel-node --presets env",
     "build": "babel src -d dist --source-maps inline --copy-files",
