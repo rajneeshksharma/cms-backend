@@ -7,7 +7,7 @@
     "dev": "nodemon src/app.js --exec babel-node --presets env",
     "build": "babel src -d dist --source-maps inline --copy-files",
     "heroku-postbuid": "npm install",
-    "start": "babel-node src/app.js"
+    "start": " ./node_modules/.bin/babel-node src/app.js"
   },
   "repository": {
     "type": "git",
