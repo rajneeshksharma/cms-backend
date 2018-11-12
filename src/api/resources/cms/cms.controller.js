@@ -4,7 +4,6 @@ import CmsPage from './cmsPage.model';
 export default {
     async getCmsData (req, res) {
         try {
-            console.log(req.query.slug);
           const data = await CmsPage.findOne({slug : req.query.slug});
           if(!data)
           return res.status(404).json({error: "No Data Found"});
