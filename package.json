@@ -4,7 +4,6 @@
   "description": "A CMS application ",
   "main": "app.js",
   "scripts": {
-    "serve": "node dist/app.js",
     "dev": "nodemon src/app.js --exec babel-node --presets env",
     "build": "babel src -d dist --source-maps inline --copy-files",
     "heroku-postbuid": "npm install",
