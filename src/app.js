@@ -2,18 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import logger from 'morgan';
 import CmsPage from './api/resources/cms/cmsPage.model';
-import {
-  connect
-} from './config/db';
-import {
-  restRouter
-} from './api';
+import {connect} from './config/db';
+import {restRouter} from './api';
 const app = express();
-
 app.use(cors());
-
 const PORT = 8000;
-
 //mongodb connection
 connect();
 
@@ -22,9 +15,6 @@ app.use(express.urlencoded({
   extended: true
 }));
 app.use(logger('dev'));
-
-
-
 
 app.use('/api', restRouter);
 
@@ -59,11 +49,6 @@ CmsPage.findOne({}).then(
     }
   },
 );
-
-
-
-
-
 app.use((req, res, next) => {
   const error = new Error('Not found');
   error.message = 'Invalid route';
