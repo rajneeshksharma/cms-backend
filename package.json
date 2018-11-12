@@ -4,10 +4,11 @@
   "description": "A CMS application ",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js --exec babel-node --presets env",
+   
+    "dev": "babel-node src/app.js",
     "build": "babel src -d dist --source-maps inline --copy-files",
     "heroku-postbuid": "npm install",
-    "start": " node_modules/.bin/babel-node src/app.js"
+    "start": "nodemon src/app.js --exec babel-node --presets env"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "mongoose": "^5.3.4",
-    "morgan": "^1.9.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1"
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
