@@ -6,7 +6,7 @@ import {connect} from './config/db';
 import {restRouter} from './api';
 const app = express();
 app.use(cors());
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 //mongodb connection
 connect();
 
